@@ -1,0 +1,351 @@
+/* Compare Profiles Styles */
+.compare-profiles {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding: 3rem 2rem;
+}
+
+.dark-mode .compare-profiles {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+}
+
+.compare-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.compare-header h1 {
+  font-size: 2.8rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.5rem;
+}
+
+.dark-mode .compare-header h1 {
+  color: white;
+}
+
+.compare-header p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.dark-mode .compare-header p {
+  color: #aaa;
+}
+
+.compare-search {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  background: white;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode .compare-search {
+  background: #0f3460;
+  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.1);
+}
+
+.compare-input-group {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.compare-input {
+  flex: 1;
+  min-width: 200px;
+  padding: 1rem 1.5rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.dark-mode .compare-input {
+  background: #16213e;
+  border-color: #667eea;
+  color: white;
+}
+
+.compare-input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.vs-badge {
+  background: #667eea;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 1rem 2.5rem;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.btn-primary:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+}
+
+.btn-primary:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.error-banner {
+  background: #ff6b6b;
+  color: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  max-width: 900px;
+  margin: 0 auto 2rem;
+  animation: slideInDown 0.3s ease;
+}
+
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.comparison-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.comparison-table {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  margin-bottom: 3rem;
+}
+
+.dark-mode .comparison-table {
+  background: #0f3460;
+  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+th {
+  padding: 1.5rem;
+  text-align: left;
+  font-weight: 600;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+td {
+  padding: 1.2rem 1.5rem;
+  border-bottom: 1px solid #f0f0f0;
+  color: #666;
+}
+
+.dark-mode td {
+  border-bottom-color: #333;
+  color: #aaa;
+}
+
+.metric-name {
+  font-weight: 600;
+  color: #333;
+}
+
+.dark-mode .metric-name {
+  color: white;
+}
+
+.dev-col {
+  width: 30%;
+}
+
+.vs-col {
+  width: 15%;
+  text-align: center;
+}
+
+.dev-value {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.dev1 {
+  color: #667eea;
+}
+
+.dev2 {
+  color: #764ba2;
+}
+
+.vs-value {
+  color: #f093fb;
+  font-weight: 600;
+}
+
+.developer-badge {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 400;
+  opacity: 0.8;
+  margin-top: 0.3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.comparison-verdict {
+  background: white;
+  border-radius: 20px;
+  padding: 3rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode .comparison-verdict {
+  background: #0f3460;
+  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.1);
+}
+
+.comparison-verdict h3 {
+  font-size: 1.8rem;
+  margin: 0 0 2rem;
+  color: #333;
+}
+
+.dark-mode .comparison-verdict h3 {
+  color: white;
+}
+
+.verdict-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.verdict-card {
+  padding: 2rem;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e9ecef 100%);
+  border-radius: 12px;
+}
+
+.dark-mode .verdict-card {
+  background: #16213e;
+}
+
+.verdict-card h4 {
+  color: #667eea;
+  margin: 0 0 1.5rem;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.score-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.score-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.score-item span {
+  font-weight: 600;
+  color: #333;
+}
+
+.dark-mode .score-item span {
+  color: white;
+}
+
+.progress-bar {
+  height: 12px;
+  background: #e0e0e0;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.dark-mode .progress-bar {
+  background: #333;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  border-radius: 6px;
+  transition: width 0.8s ease;
+}
+
+.dev1-fill {
+  background: linear-gradient(90deg, #667eea 0%, #667eea 100%);
+}
+
+.dev2-fill {
+  background: linear-gradient(90deg, #764ba2 0%, #764ba2 100%);
+}
+
+@media (max-width: 768px) {
+  .compare-input-group {
+    flex-direction: column;
+  }
+
+  .compare-input,
+  .btn-primary {
+    width: 100%;
+  }
+
+  .vs-badge {
+    display: none;
+  }
+
+  table {
+    font-size: 0.9rem;
+  }
+
+  th,
+  td {
+    padding: 0.8rem;
+  }
+
+  .dev-col {
+    width: auto;
+  }
+
+  .developer-badge {
+    display: none;
+  }
+}
