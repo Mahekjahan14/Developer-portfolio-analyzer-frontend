@@ -4,7 +4,7 @@ import com.portfolio.service.PortfolioService;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@CrossOrigin(origins = {"http://localhost:5173", "http://localhost:3000", "*"})
+@CrossOrigin(origins = {"http://localhost:3000", "http://localhost:3001", "https://developer-portfolio-analyzer-frontend.onrender.com"}, allowCredentials = "true")
 @RequestMapping("/analyze")
 public class PortfolioController {
 
